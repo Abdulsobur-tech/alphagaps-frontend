@@ -27,7 +27,7 @@ const navigate = useNavigate();
 const onSubmit = async(e) => {
     e.preventDefault()
 try{
-const res =await axios.post(`${process.env.REACT_APP_BASE_URL}/api/v1//signup`, data
+const res =await axios.post(`https://aphagaps-backend.onrender.com/api/v1//signup`, data
 )
 console.log(data)
 const token = res.data.token;

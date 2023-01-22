@@ -13,7 +13,7 @@ function Navbar() {
   const [talk, setTalk] = useState([]);
 
   const fetchData = () => {
-    return axios.get(`${process.env.REACT_APP_BASE_URL}/api/v1/talks`)
+    return axios.get(`https://aphagaps-backend.onrender.com/api/v1/talks`)
           .then((response) => setTalk(response.data));
           
   }

@@ -26,7 +26,7 @@ const navigate = useNavigate();
 const onSubmit = async(e) => {
     e.preventDefault()
 try{
-const res =await axios.post(`${process.env.REACT_APP_BASE_URL}/api/v1//addtalk`, data,{
+const res =await axios.post(`https://aphagaps-backend.onrender.com/api/v1//addtalk`, data,{
     headers: { authorization: `Bearer ${token}` },})
 console.log(data)
 console.log(res.status,"kkkk");
